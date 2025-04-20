@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scholars for the Soul</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <img src="images/logo.png" alt="Scholars for the Soul Logo" class="logo-img large-logo">
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#media">Media</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="toggleMode" class="btn-secondary">🌞 Toggle Mode</button>
+    </div>
+  </header>
+
+  <section class="hero reveal">
+    <div class="container">
+      <h1>Empowering Educators. Transforming Communities.</h1>
+      <p>Partner with Scholars for the Soul to elevate your training, facilitation, and keynotes with intention and impact.</p>
+      <a href="#services" class="btn-primary">View Services</a>
+      <img src="images/samplephoto1.PNG" alt="Students learning" class="hero-img"/>
+    </div>
+  </section>
+
+  <section id="about" class="about section reveal">
+    <div class="container split">
+      <div class="text">
+        <h2>About Us</h2>
+        <p>Founded with the mission of restoring humanity to education through intentional design and impactful facilitation.</p>
+        <p>Our soulful approach to culturally responsive teaching and leadership centers students and supports educators, organizations, and companies to create and sustain impactful systems of transformation, liberation, and healing for all.</p>
+        <div class="center-btn">
+          <a href="#contact" class="btn-secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="image-block">
+        <img src="images/samplephoto2.jpeg" alt="Engaged students" />
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="services" class="section services-alt reveal">
+    <div class="container">
+      <h2>How do we serve?</h2>
+      <div class="cards column">
+        <div class="card card-wide">
+          <h3>Culturally Responsive Teaching</h3>
+          <ul>
+            <li>Workshop series</li>
+            <li>Instructional coaching</li>
+            <li>Custom programs</li>
+            <li>Strategic teacher efficacy</li>
+          </ul>
+          <div class="center-btn">
+            <a href="#contact" class="btn-primary">Learn More</a>
+          </div>
+        </div>
+        <div class="card card-wide">
+          <h3>Culturally Responsive Leadership</h3>
+          <ul>
+            <li>Leadership retreats</li>
+            <li>Workshop series</li>
+            <li>Coaching 1:1 or group</li>
+            <li>Empathetic, reflective leaders</li>
+          </ul>
+          <div class="center-btn">
+            <a href="#contact" class="btn-primary">Learn More</a>
+          </div>
+        </div>
+        <div class="card card-wide">
+          <h3>DEIJ + Healing</h3>
+          <ul>
+            <li>Company retreats</li>
+            <li>Justice-centered design</li>
+            <li>Healing & team-building</li>
+            <li>Custom equity systems</li>
+          </ul>
+          <div class="center-btn">
+            <a href="#contact" class="btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="media" class="section testimonials light reveal">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-carousel">
+        <div class="testimonial active">
+          <p><em>"I thought you did an excellent job. Kept me interested the whole presentation!"</em></p>
+          <strong>Project Connect, Cincinnati Public Schools</strong>
+        </div>
+        <div class="testimonial">
+          <p><em>"Loved the experience. Made me want to implement several changes to my instruction."</em></p>
+          <strong>Lisa Academy Teacher</strong>
+        </div>
+        <div class="testimonial">
+          <p><em>"The experience was refreshing. Dr. Mel brings light to the passionate work of educators."</em></p>
+          <strong>Freedom Prep Academy Charter Schools</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-bio reveal">
+    <div class="container split">
+      <div class="image-block">
+        <img src="images/drbattles.PNG" alt="Dr. Melanie Desmuke-Battles" />
+      </div>
+      <div class="text">
+        <h2>Meet Dr. Melanie Desmuke-Battles</h2>
+        <p>Dr. Battles is a sought-after educational consultant known for transformative conversations around equity and healing in schools. With over 15 years of experience, she helps communities design affirming learning spaces.</p>
+        <div class="center-btn">
+          <button id="openModal" class="btn-primary">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="consultation" class="section consult reveal">
+    <div class="container">
+      <h2>Let’s Talk About Your Next Event</h2>
+      <p>Schedule a free consultation to explore how we can serve your team or audience.</p>
+      <a href="#contact" class="btn-primary">Schedule Now</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section light reveal">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="https://postman-echo.com/post" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2025 Scholars for the Soul</div>
+      <div><a href="#">Privacy</a> | <a href="#">Terms</a></div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Booking Inquiry</h2>
+      <p>To invite Dr. Battles to speak, facilitate, or consult, please fill out the contact form below or email us directly with your event details.</p>
+      <a href="#contact" class="btn-primary">Go to Contact</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
